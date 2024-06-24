@@ -1,0 +1,46 @@
+@import url("https://fonts.cdnfonts.com/css/br-cobane");
+
+* {
+  text-decoration: none !important;
+  font-family: "br-cobane", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.cover {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.navlink:hover {
+  color: aquamarine !important;
+  transition: 0.3s ease-in;
+}
+
+.mediaImg {
+  width: 250px;
+  height: 150px;
+}
+
+.mediaImg:hover {
+  opacity: 0.8;
+  transition: 0.3s ease-in;
+}
+
+.scrollBody {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollBody::-webkit-scrollbar {
+  display: none;
+}
+
+.btnStyle:hover {
+  background-color: aquamarine !important;
+  transition: o.3s ease-in;
+  color: white !important;
+}
+
+.pText{
+  font-size: clamp(1rem, 2vw + 0.7rem, 1.15rem);
+}
