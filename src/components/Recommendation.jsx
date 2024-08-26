@@ -17,7 +17,7 @@ export default function Recommendation({ recommend }) {
             {recommend?.results?.map((movie) => (
               <MovieCard key={movie.id} {...movie} />
             ))}
-            <Scrollicons scroll={scroll} />
+            <Scrollicons scroll={scroll} /> 
           </div>
         </div>
       ) : (

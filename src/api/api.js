@@ -19,7 +19,20 @@ const getToprated = () => {
 };
 
 const getMovieDetail = (id) => {
-  return http.get(`/movie/${id}?api_key=${apikey}&append_to_response=credits,recommendations`);
+  return http.get(
+    `/movie/${id}?api_key=${apikey}&append_to_response=credits,recommendations`
+  );
+};
+
+const getMovies = (id) => {
+  return http.get(`/discover/movie?api_key=${apikey}&with_genres=${id}`);
+};
+
+const getPerson = (id) => {
+  return http.get(`/person/${id}?api_key=${apikey}&append_to_response=movie_credits`);
+}
+const getSearch = (searchQuery) => {
+  return http.get(`/search/multi?api_key=${apikey}&query=${searchQuery}`);
 };
 
 export {
@@ -28,4 +41,7 @@ export {
   getMoviesByGenres,
   getToprated,
   getMovieDetail,
+  getMovies,
+  getPerson,
+  getSearch
 };

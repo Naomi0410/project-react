@@ -73,7 +73,7 @@ export default function MovieDetail() {
                           {data?.genres?.map((genre) => (
                             <Link
                               key={genre.id}
-                              to={`/genres/${genre.id}`}
+                              to={`/movies/${genre.id}`}
                               style={{ backgroundColor: "orange" }}
                               className="small rounded-3 p-2 text-dark fw-bold"
                             >
